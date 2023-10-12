@@ -1,0 +1,78 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    letter-spacing: 1px;
+    background:#F3F3FB;
+}
+.container{
+    width:100%;
+    height: 100%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding:0px 20px;
+}
+
+.container{
+    width:100%;
+    height:100%;
+    max-width: 1000px;
+    margin:1 rem auto;
+    padding:0px 20px;
+}
+.comments-container{
+    width:100%;
+    height: 100%;
+    display:grid;
+    grid-template-columns: 1 fr;
+    gap:1rem;
+    padding:20px;
+}
+li{
+    list-style-type: none;
+}
+.comment{
+    background:#fff;
+    padding:10px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 7px #BCBCCC;
+}
+.comment .email{
+    font-size: 12px;
+    color:#2F334D;
+
+}
+.comment .name{
+    color: #8C8C9C;
+    font-size:12px;
+    text-transform: capitalize;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  
+}
+.comment .message{
+    font-size:12px;
+    letter-spacing: 1px;
+}
+.comments-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 10px;
+    
+    
+}
+@media screen and (min-width:768px) {
+    .comments-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap:1.5rem;
+    }
+    
+}
